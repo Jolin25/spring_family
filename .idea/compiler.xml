@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="pure" />
         <module name="druid" />
         <module name="multi-jdbc" />
         <module name="demo" />
@@ -15,6 +16,7 @@
       <module name="demo" target="1.8" />
       <module name="druid" target="1.8" />
       <module name="multi-jdbc" target="1.8" />
+      <module name="pure" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -22,6 +24,7 @@
       <module name="demo" options="-parameters" />
       <module name="druid" options="-parameters" />
       <module name="multi-jdbc" options="-parameters" />
+      <module name="pure" options="-parameters" />
     </option>
   </component>
 </project>

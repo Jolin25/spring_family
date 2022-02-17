@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/druid/druid.iml" filepath="$PROJECT_DIR$/druid/druid.iml" />
       <module fileurl="file://$PROJECT_DIR$/multi-jdbc/multi-jdbc.iml" filepath="$PROJECT_DIR$/multi-jdbc/multi-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pure/pure.iml" filepath="$PROJECT_DIR$/pure/pure.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-family.iml" filepath="$PROJECT_DIR$/.idea/spring-family.iml" />
     </modules>
   </component>
