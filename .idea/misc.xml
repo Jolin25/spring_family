@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/multi-jdbc/pom.xml" />
         <option value="$PROJECT_DIR$/demo/pom.xml" />
         <option value="$PROJECT_DIR$/pure/pom.xml" />
+        <option value="$PROJECT_DIR$/pure-jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/demojdbc/pom.xml" />
       </list>
     </option>
   </component>
