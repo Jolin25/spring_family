@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/pure/pom.xml" />
         <option value="$PROJECT_DIR$/pure-jdbc/pom.xml" />
         <option value="$PROJECT_DIR$/demojdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/jpademo/pom.xml" />
       </list>
     </option>
   </component>
