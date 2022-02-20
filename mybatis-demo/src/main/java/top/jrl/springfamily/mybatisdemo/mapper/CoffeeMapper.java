@@ -15,7 +15,7 @@ public interface CoffeeMapper {
      * @param coffee c
      * @return 更改了的行数
      */
-    @Options(useGeneratedKeys = true,keyColumn = "id",keyProperty = "id")
+    @Options(useGeneratedKeys = true, keyColumn = "id", keyProperty = "id")
     @Insert("insert into t_coffee (name,price,create_time,update_time) " +
             "values (#{name},#{price},now(),now())")
     int save(Coffee coffee);

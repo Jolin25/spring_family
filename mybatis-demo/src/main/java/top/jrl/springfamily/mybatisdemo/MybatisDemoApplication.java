@@ -19,7 +19,7 @@ import top.jrl.springfamily.mybatisdemo.model.Coffee;
  * @author Joly
  */
 @Slf4j
-@MapperScan("top.jrl.springfamily.mybatisdemo.mapper")
+//@MapperScan("top.jrl.springfamily.mybatisdemo.mapper")
 @SpringBootApplication
 public class MybatisDemoApplication implements ApplicationRunner {
     @Autowired

@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/jpademo/jpademo.iml" filepath="$PROJECT_DIR$/jpademo/jpademo.iml" />
       <module fileurl="file://$PROJECT_DIR$/multi-jdbc/multi-jdbc.iml" filepath="$PROJECT_DIR$/multi-jdbc/multi-jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis-demo/mybatis-demo.iml" filepath="$PROJECT_DIR$/mybatis-demo/mybatis-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-demo/mybatis-generator.iml" filepath="$PROJECT_DIR$/mybatis-demo/mybatis-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-generator-demo/mybatis-generator-demo.iml" filepath="$PROJECT_DIR$/mybatis-generator-demo/mybatis-generator-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/pure/pure.iml" filepath="$PROJECT_DIR$/pure/pure.iml" />
       <module fileurl="file://$PROJECT_DIR$/pure-jdbc/pure-jdbc.iml" filepath="$PROJECT_DIR$/pure-jdbc/pure-jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-family.iml" filepath="$PROJECT_DIR$/.idea/spring-family.iml" />

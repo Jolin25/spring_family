@@ -11,7 +11,9 @@
         <module name="jpademo" />
         <module name="pure-jdbc" />
         <module name="druid" />
+        <module name="mybatis-generator" />
         <module name="demojdbc" />
+        <module name="mybatis-generator-demo" />
         <module name="pure" />
         <module name="mybatis-demo" />
         <module name="multi-jdbc" />
@@ -24,6 +26,8 @@
       <module name="jpademo" target="1.8" />
       <module name="multi-jdbc" target="1.8" />
       <module name="mybatis-demo" target="1.8" />
+      <module name="mybatis-generator" target="1.8" />
+      <module name="mybatis-generator-demo" target="1.8" />
       <module name="pure" target="1.8" />
       <module name="pure-jdbc" target="1.8" />
     </bytecodeTargetLevel>
@@ -36,6 +40,8 @@
       <module name="jpademo" options="-parameters" />
       <module name="multi-jdbc" options="-parameters" />
       <module name="mybatis-demo" options="-parameters" />
+      <module name="mybatis-generator" options="-parameters" />
+      <module name="mybatis-generator-demo" options="-parameters" />
       <module name="pure" options="-parameters" />
       <module name="pure-jdbc" options="-parameters" />
     </option>
