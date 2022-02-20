@@ -8,11 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo" />
-        <module name="pure" />
-        <module name="pure-jdbc" />
         <module name="jpademo" />
+        <module name="pure-jdbc" />
         <module name="druid" />
         <module name="demojdbc" />
+        <module name="pure" />
+        <module name="mybatis-demo" />
         <module name="multi-jdbc" />
       </profile>
     </annotationProcessing>
@@ -22,6 +23,7 @@
       <module name="druid" target="1.8" />
       <module name="jpademo" target="1.8" />
       <module name="multi-jdbc" target="1.8" />
+      <module name="mybatis-demo" target="1.8" />
       <module name="pure" target="1.8" />
       <module name="pure-jdbc" target="1.8" />
     </bytecodeTargetLevel>
@@ -33,6 +35,7 @@
       <module name="druid" options="-parameters" />
       <module name="jpademo" options="-parameters" />
       <module name="multi-jdbc" options="-parameters" />
+      <module name="mybatis-demo" options="-parameters" />
       <module name="pure" options="-parameters" />
       <module name="pure-jdbc" options="-parameters" />
     </option>
