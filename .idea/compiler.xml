@@ -11,6 +11,7 @@
         <module name="jpademo" />
         <module name="pure-jdbc" />
         <module name="druid" />
+        <module name="springbucks" />
         <module name="mybatis-generator" />
         <module name="demojdbc" />
         <module name="mybatis-generator-demo" />
@@ -22,14 +23,15 @@
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
       <module name="demojdbc" target="1.8" />
-      <module name="druid" target="1.8" />
+      <module name="druid" target="1.5" />
       <module name="jpademo" target="1.8" />
-      <module name="multi-jdbc" target="1.8" />
+      <module name="multi-jdbc" target="1.5" />
       <module name="mybatis-demo" target="1.8" />
       <module name="mybatis-generator" target="1.8" />
       <module name="mybatis-generator-demo" target="1.8" />
-      <module name="pure" target="1.8" />
+      <module name="pure" target="1.5" />
       <module name="pure-jdbc" target="1.8" />
+      <module name="springbucks" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -44,6 +46,7 @@
       <module name="mybatis-generator-demo" options="-parameters" />
       <module name="pure" options="-parameters" />
       <module name="pure-jdbc" options="-parameters" />
+      <module name="springbucks" options="-parameters" />
     </option>
   </component>
 </project>
