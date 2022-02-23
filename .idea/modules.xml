@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/mybatis-generator-demo/mybatis-generator-demo.iml" filepath="$PROJECT_DIR$/mybatis-generator-demo/mybatis-generator-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/pure/pure.iml" filepath="$PROJECT_DIR$/pure/pure.iml" />
       <module fileurl="file://$PROJECT_DIR$/pure-jdbc/pure-jdbc.iml" filepath="$PROJECT_DIR$/pure-jdbc/pure-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redisdemo/redisdemo.iml" filepath="$PROJECT_DIR$/redisdemo/redisdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-family.iml" filepath="$PROJECT_DIR$/.idea/spring-family.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbucks/springbucks.iml" filepath="$PROJECT_DIR$/springbucks/springbucks.iml" />
     </modules>
