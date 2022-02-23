@@ -8,8 +8,11 @@ import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import top.jrl.redisdemo.model.Coffee;
+import top.jrl.redisdemo.model.CoffeeCache;
+import top.jrl.redisdemo.repository.CoffeeCacheRepository;
 import top.jrl.redisdemo.repository.CoffeeRepository;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
@@ -50,6 +53,44 @@ public class CoffeeService {
             // 在RedisTemplate的维度进行TTL的管理，是不是说明了某种设计思想
             redisTemplate.expire(CACHE, 1, TimeUnit.MINUTES);
         }
+        return coffee;
+    }
+
+
+    @Autowired
+    private CoffeeCacheRepository cacheRepository;
+
+    public Optional<Coffee> findSimpleCoffeeFromCache(String name) {
+        Optional<CoffeeCache> cached = cacheRepository.findOneByName(name);
+        if (cached.isPresent()) {
+            CoffeeCache coffeeCache = cached.get();
+            Coffee coffee = Coffee.builder()
+                    .name(coffeeCache.getName())
+                    .price(coffeeCache.getPrice())
+                    .build();
+            log.info("Coffee {} found in cache.", coffeeCache);
+            return Optional.of(coffee);
+        } else {
+            Optional<Coffee> raw = findOneCoffeeByRepository(name);
+            raw.ifPresent(c -> {
+                CoffeeCache coffeeCache = CoffeeCache.builder()
+                        .id(c.getId())
+                        .name(c.getName())
+                        .price(c.getPrice())
+                        .build();
+                log.info("Save Coffee {} to cache.", coffeeCache);
+                cacheRepository.save(coffeeCache);
+            });
+            return raw;
+        }
+    }
+
+    public Optional<Coffee> findOneCoffeeByRepository(String name) {
+        ExampleMatcher matcher = ExampleMatcher.matching()
+                .withMatcher("name", exact().ignoreCase());
+        Optional<Coffee> coffee = coffeeRepository.findOne(
+                Example.of(Coffee.builder().name(name).build(), matcher));
+        log.info("Coffee Found: {}", coffee);
         return coffee;
     }
 }

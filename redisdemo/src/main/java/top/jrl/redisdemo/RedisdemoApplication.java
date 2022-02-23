@@ -43,5 +43,11 @@ public class RedisdemoApplication implements ApplicationRunner {
             Optional<Coffee> coffee = coffeeService.findOneCoffee("latte");
             log.info("======================find from redis===================={}",coffee);
         }
+        coffeeService.findSimpleCoffeeFromCache("mocha");
+        // 测试一下是从缓存里拿的
+        for (int i = 0; i < 5; i++) {
+            Optional<Coffee> coffee = coffeeService.findOneCoffee("mocha");
+            log.info("======================find from redis===================={}",coffee);
+        }
     }
 }
